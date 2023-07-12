@@ -62,7 +62,7 @@ lightSphereWhite.position.set( 1 , 10 , 3 );
 scene.add(lightSphereWhite);
 
 
-const geometry = new THREE.BoxGeometry(5 , 5, 5, 5, 5, 5);
+const geometry = new THREE.BoxGeometry(5 , 5, 5);
 // const geometry = new THREE.PlaneGeometry(1 , 1, 1);
 // const geometry = new THREE.CircleGeometry(1 , 1, 1);
 // const geometry = new THREE.RingGeometry(1 , 1, 1);
@@ -73,7 +73,7 @@ const geometry = new THREE.BoxGeometry(5 , 5, 5, 5, 5, 5);
 // const geometry = new THREE.TorusGeometry(5 , 10, 25);
 
 const material = new THREE.MeshStandardMaterial({color: "red" });
-const cube = new THREE.Line( geometry , material );
+const cube = new THREE.Mesh( geometry , material );
 
 // const cube = new THREE.Line( geometry , material ); if you use Line you don't need wireframe
 
