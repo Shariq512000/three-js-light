@@ -43,7 +43,7 @@ scene.add(lightSphere);
 
 const lightGeometryBlue = new THREE.SphereGeometry(1, 15, 32);
 const lightMaterialBlue = new THREE.MeshBasicMaterial({color : 0x0000FF});
-const lightSphereBlue = new THREE.Mesh(lightGeometryBlue , lightMaterialBlue);
+const lightSphereBlue = new THREE.Line(lightGeometryBlue , lightMaterialBlue);
 lightSphereBlue.position.set( -10 , -5 , 3 );
 scene.add(lightSphereBlue);
 
